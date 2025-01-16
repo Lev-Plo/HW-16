@@ -6,22 +6,15 @@ body {
   background-image: url(./images/house.webp);
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 .bg-box::before {
   content: "";
   display: block;
-  height: 100px;
-  background-image: url(./images/lamp.webp);
-  background-position: top;
-  background-size: 50px;
-  background-repeat: repeat-x;
-}
-.bg-box::after {
-  content: "";
-  display: block;
-  height: calc(100vh - 100px);
-  background-image: url(./images/grass.webp);
-  background-position: bottom;
-  background-size: 450px;
-  background-repeat: repeat-x;
+  height: 100vh;
+  background-image: url(./images/grass.webp), url(./images/lamp.webp), url(./images/hedgehog.webp), url(./images/donut.webp);
+  background-position: bottom, top, left, right;
+  background-size: 400px, 50px, 50px, 50px;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
 }
